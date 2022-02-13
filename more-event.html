@@ -11,10 +11,27 @@
     <section>
       <h3 id="secret-info">very very important notice for delete</h3>
       <input type="text" id="delete-comand" placeholder="please type Delete" />
-      <br />
+
       <button id="delete-btn">Delete</button>
     </section>
 
-    <script></script>
+    <script>
+      document
+        .getElementById("delete-btn")
+        .addEventListener("click", function () {
+          document.getElementById("secret-info").style.display = "none";
+        });
+      // keyup
+      document
+        .getElementById("delete-comand")
+        .addEventListener("keyup", function (event) {
+          const deleteButton = document.getElementById("delete-btn");
+          if (event.target.value == "Delete") {
+            deleteButton.removeAttribute("disabled");
+          } else {
+            deleteButton.setAttribute("disabled", true);
+          }
+        });
+    </script>
   </body>
 </html>
