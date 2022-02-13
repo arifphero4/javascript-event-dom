@@ -1,7 +1,7 @@
 /* step - 1 */
 //write the code inside the tag.
 
-/* step - 2 */
+/* step - 2  "most important"*/
 function makeRed() {
   document.body.style.backgroundColor = "red";
   document.getElementById("dom-title").style.color = "white";
@@ -35,7 +35,7 @@ cadetBlueButton.addEventListener("click", function makeCadetBlue() {
   document.body.style.backgroundColor = " cadetBlue";
 });
 
-/* step - 7 */
+/* step - 7 "most important" */
 document
   .getElementById("make-DarkOrchid")
   .addEventListener("click", function makeDarkOrchid() {
