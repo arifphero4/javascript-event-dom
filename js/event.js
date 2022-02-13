@@ -36,3 +36,8 @@ cadetBlueButton.addEventListener("click", function makeCadetBlue() {
 });
 
 /* step - 7 */
+document
+  .getElementById("make-DarkOrchid")
+  .addEventListener("click", function makeDarkOrchid() {
+    document.body.style.backgroundColor = "darkOrchid";
+  });
