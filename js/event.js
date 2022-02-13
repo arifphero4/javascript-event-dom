@@ -8,3 +8,11 @@ function makeRed() {
 }
 
 /* step - 3 */
+const blueButton = document.getElementById("make-blue");
+blueButton.onclick = makeBlue;
+function makeBlue() {
+  document.body.style.backgroundColor = "blue";
+  document.getElementById("dom-title").style.color = "red";
+}
+
+/* step - 4 */
