@@ -16,3 +16,8 @@ function makeBlue() {
 }
 
 /* step - 4 */
+const greenButton = document.getElementById("make-green");
+greenButton.onclick = function () {
+  document.body.style.backgroundColor = "green";
+  document.getElementById("dom-title").style.color = "blue";
+};
