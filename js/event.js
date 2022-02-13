@@ -21,3 +21,12 @@ greenButton.onclick = function () {
   document.body.style.backgroundColor = "green";
   document.getElementById("dom-title").style.color = "blue";
 };
+
+/* step - 5 */
+const cyanButton = document.getElementById("make-cyan");
+cyanButton.addEventListener("click", makeCyan);
+function makeCyan() {
+  document.body.style.backgroundColor = "cyan";
+}
+
+/* step - 6 */
