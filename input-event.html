@@ -8,5 +8,22 @@
   </head>
   <body>
     <h1>This in input event!</h1>
+    <p id="update-name"></p>
+
+    <input type="text" name="" id="input-field" />
+    <button id="update-button">Update</button>
+
+    <script>
+      document
+        .getElementById("update-button")
+        .addEventListener("click", function () {
+          const nameField = document.getElementById("input-field");
+          console.log(nameField);
+
+          const updatedName = document.getElementById("update-name");
+          updatedName.innerText = nameField.value;
+          nameField.value = "";
+        });
+    </script>
   </body>
 </html>
