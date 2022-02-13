@@ -8,5 +8,43 @@
   </head>
   <body>
     <h1>Add your comment here!</h1>
+    <div id="comment-container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        similique, vitae dolorum mollitia temporibus aliquid sapiente dicta
+        saepe quibusdam laboriosam eligendi maiores voluptate voluptatem
+        explicabo, ipsum iusto odio alias eveniet?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        similique, vitae dolorum mollitia temporibus aliquid sapiente dicta
+        saepe quibusdam laboriosam eligendi maiores voluptate voluptatem
+        explicabo, ipsum iusto odio alias eveniet?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        similique, vitae dolorum mollitia temporibus aliquid sapiente dicta
+        saepe quibusdam laboriosam eligendi maiores voluptate voluptatem
+        explicabo, ipsum iusto odio alias eveniet?
+      </p>
+    </div>
+    <div>
+      <textarea name="" id="new-comment" cols="30" rows="10"></textarea> <br />
+      <button id="submit-comment">Submit</button>
+    </div>
+
+    <script>
+      document
+        .getElementById("submit-comment")
+        .addEventListener("click", function () {
+          const commentBox = document.getElementById("new-comment");
+          const newComment = document.createElement("p");
+          newComment.innerText = commentBox.value;
+
+          const commentContainer = document.getElementById("comment-container");
+          commentContainer.appendChild(newComment);
+          commentBox.value = "";
+        });
+    </script>
   </body>
 </html>
