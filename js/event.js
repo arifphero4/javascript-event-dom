@@ -41,3 +41,5 @@ document
   .addEventListener("click", function makeDarkOrchid() {
     document.body.style.backgroundColor = "darkOrchid";
   });
+
+// let plan = (single() === true) ? single.stop() && makeGf(): hangOut();
