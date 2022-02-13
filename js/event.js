@@ -30,3 +30,9 @@ function makeCyan() {
 }
 
 /* step - 6 */
+const cadetBlueButton = document.getElementById("make-CadetBlue");
+cadetBlueButton.addEventListener("click", function makeCadetBlue() {
+  document.body.style.backgroundColor = " cadetBlue";
+});
+
+/* step - 7 */
